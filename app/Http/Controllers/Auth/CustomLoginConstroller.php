@@ -90,8 +90,6 @@ class CustomLoginConstroller extends Controller
         //
     }
 
-chown -R www-data.www-data /var/www/html/karapau/storage
-chown -R www-data.www-data /var/www/html/karapau/bootstrap/cache
 
     /**
      * Remove the specified resource from storage.
