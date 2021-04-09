@@ -10,7 +10,7 @@
             <div class="mx-auto mt-2">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                        <button class="nav-link active" id="home-tab" onclick="login()" data-bs-toggle="tab" data-bs-target="#home"
                             type="button" role="tab" aria-controls="home" aria-selected="true">Login</button>
                     </li>
                     <li class="nav-item" role="presentation">
@@ -26,16 +26,17 @@
         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
             <div class="container">
                 <div class="mt-5 form-login">
-                    <form>
+                    <form action="{{ route('login.custom') }}" method="post">
+                        @csrf
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
+                            <input type="email" class="form-control" name="email" id="exampleInputEmail1"
                                 aria-describedby="emailHelp">
 
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">Senha</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
+                            <input type="password" class="form-control" name="password" id="exampleInputPassword1">
                         </div>
                         <div class="m-3 container">
                             <div class="text-center forget-pass">
@@ -51,11 +52,24 @@
         </div>
         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
             <div class="mt-5">
-                <div class="container my-2">
-                    <button type="submit" class="btn btn-primary btn-principal">Registro de Comprador</button>
+                <div id="login">
+                    <div class="container my-2">
+                        <button onclick="comprador()" class="btn btn-primary btn-principal">Registro de
+                            Comprador</button>
+                    </div>
+                    <div class="container my-4">
+                        <a href="{{ url('seller-register') }}"> <button type="button"
+                                class="btn btn-primary btn-principal">Registro de vendedor</button></a>
+                    </div>
                 </div>
-                <div class="container my-4">
-                    <button type="submit" class="btn btn-primary btn-principal">Registro de vendedor</button>
+                <div id="comprador" class="d-none">
+                    <div class="container my-2">
+                        <button type="submit" class="btn btn-primary btn-principal">Comprador Individual</button>
+                    </div>
+                    <div class="container my-4">
+                        <a href="{{ url('buyer-register') }}"> <button type="button"
+                                class="btn btn-primary btn-principal">Comprador Coletivo</button></a>
+                    </div>
                 </div>
                 {{-- <div class="m-3 container">
                     <div class="text-center help">
