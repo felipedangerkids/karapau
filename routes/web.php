@@ -22,7 +22,7 @@ Route::get('/', function () {
 });
 
 
-// Auth::routes();
+Auth::routes();
 
 Route::post('/login-custom', [CustomLoginConstroller::class, 'store'])->name('login.custom');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
