@@ -1,88 +1,38 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="">
-    <div class="header-login">
-        <div class="container-fluid d-flex">
-            <img class="mx-auto mt-5" src="{{ url('assets/img/logo.svg') }}" alt="">
-        </div>
-        <div class="d-flex container">
-            <div class="mx-auto mt-2">
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="home-tab" onclick="login()" data-bs-toggle="tab" data-bs-target="#home"
-                            type="button" role="tab" aria-controls="home" aria-selected="true">Login</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-                            type="button" role="tab" aria-controls="profile" aria-selected="false">Registrar</button>
-                    </li>
 
-                </ul>
+<input type="hidden" id="anPageName" name="page" value="authentication-login" />
+<div class="container-center-horizontal">
+    <div class="authentication-login screen">
+        <div class="overlap-group-C61RwL">
+            <div class="background-header-big-4eduM0"></div>
+            <a href="{{ url('login') }}">
+                <div class="login-4eduM0">Login</div>
+            </a>
+            <a href="{{ url('register') }}">
+                <div class="registo-4eduM0">Registo</div>
+            </a>
+            <div class="line-red-4eduM0">
+
             </div>
-        </div>
-    </div>
-    <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
             <div class="container">
-                <div class="mt-5 form-login">
-                    <form action="{{ route('login.custom') }}" method="post">
-                        @csrf
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email</label>
-                            <input type="email" class="form-control" name="email" id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
-
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Senha</label>
-                            <input type="password" class="form-control" name="password" id="exampleInputPassword1">
-                        </div>
-                        <div class="m-3 container">
-                            <div class="text-center forget-pass">
-                                <a href="">Esqueceu a senha?</a>
-                            </div>
-                        </div>
-                        <div class="container mt-2">
-                            <button type="submit" class="btn btn-primary login">Entrar</button>
-                        </div>
-                    </form>
-                </div>
+                <img class="mx-auto logo-4eduM0" src="{{ url('assets/img/logo@1x.png') }}" />
             </div>
         </div>
-        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-            <div class="mt-5">
-                <div id="login">
-                    <div class="container my-2">
-                        <button onclick="comprador()" class="btn btn-primary btn-principal">Registro de
-                            Comprador</button>
-                    </div>
-                    <div class="container my-4">
-                        <a href="{{ url('seller-register') }}"> <button type="button"
-                                class="btn btn-primary btn-principal">Registro de vendedor</button></a>
-                    </div>
-                </div>
-                <div id="comprador" class="d-none">
-                    <div class="container my-2">
-                        <button type="submit" class="btn btn-primary btn-principal">Comprador Individual</button>
-                    </div>
-                    <div class="container my-4">
-                        <a href="{{ url('buyer-register') }}"> <button type="button"
-                                class="btn btn-primary btn-principal">Comprador Coletivo</button></a>
-                    </div>
-                </div>
-                {{-- <div class="m-3 container">
-                    <div class="text-center help">
-                        <a href="">Precisa de Ajuda?</a>
-                    </div>
-                </div> --}}
-            </div>
+        <div class="imput-100-C61RwL">
+            <input class="imput-100-i20343111253-ETfRnS" name="imput-100" placeholder="E-mail" type="email" required />
         </div>
-
+        <div class="imput-100-VMr6Om">
+            <input class="imput-100-i20343411253-UppLul" name="imput-100" placeholder="Senha" type="password"
+                required />
+        </div>
+        <div class="btn-generic-C61RwL">
+            <div class="text-btn-generic-i203437226-Sts0rK">Login</div>
+        </div>
+        <div class="esqueceu-a-senha-C61RwL">Esqueceu a senha?</div>
     </div>
 </div>
-
-
 @endsection
 
 
