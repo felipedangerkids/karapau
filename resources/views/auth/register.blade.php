@@ -20,9 +20,11 @@
         <div class="btn-generic-C61RwL">
             <div class="text-btn-generic-i119436226-Sts0rK">Registo de vendedor</div>
         </div>
-        <div class="btn-generic-VMr6Om">
-            <div class="text-btn-generic-i119439226-NLXNbA">Registo de comprador</div>
-        </div>
+        <a href="{{ url('buyer-choice') }}">
+            <div class="btn-generic-VMr6Om">
+                <div class="text-btn-generic-i119439226-NLXNbA">Registo de comprador</div>
+            </div>
+        </a>
     </div>
 </div>
 @endsection

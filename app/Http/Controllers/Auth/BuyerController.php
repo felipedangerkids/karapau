@@ -18,7 +18,7 @@ class BuyerController extends Controller
      */
     public function index()
     {
-        return view('auth.buyer');
+        return view('auth.buyer-choice');
     }
 
     /**

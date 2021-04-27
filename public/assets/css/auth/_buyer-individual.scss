@@ -1,0 +1,459 @@
+:root {
+  --cloud: #c7c7c7;
+  --manatee: #9098b1;
+  --voodoo: #4f3a57;
+  --white: #ffffff;
+
+  --font-size-l: 20px;
+  --font-size-m: 18px;
+
+  --font-family-poppins: "Poppins", Helvetica;
+}
+.poppins-normal-manatee-18px {
+  color: var(--manatee);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+.border-2px-cloud {
+  border: 2px solid var(--cloud);
+}
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700,800");
+* {
+  box-sizing: border-box;
+}
+.container-center-horizontal {
+  pointer-events: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.container-center-horizontal > * {
+  pointer-events: auto;
+  flex-shrink: 0;
+}
+.screen a {
+  text-decoration: none;
+  display: contents;
+}
+input:focus {
+  outline: none;
+}
+/* screen - authentication-register-individual-buyer */
+
+.authentication-register-individual-buyer {
+  align-items: center;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 955px;
+  justify-content: flex-start;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 375px;
+}
+.authentication-register-individual-buyer .aceito-os-termos-e-condies-dXBp89 {
+  background-color: transparent;
+  color: transparent;
+  flex-shrink: 1;
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  height: auto;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  margin-left: 13px;
+  min-height: 28px;
+  min-width: 284px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: 284px;
+}
+.authentication-register-individual-buyer .background-header-small-C61RwL {
+  align-items: center;
+  background-color: transparent;
+  background-image: url(../img/background-header-small@2x.svg);
+  background-size: 100% 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 94px;
+  justify-content: flex-start;
+  min-width: 375px;
+  padding: 0 28px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-individual-buyer .btn-generic-C61RwL {
+  align-items: flex-start;
+  background-color: #36a6d4;
+  border-radius: 5.983438968658447px;
+  box-shadow: 0px 2.3933756351470947px 8.376814842224121px #0000000f;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 49px;
+  justify-content: flex-end;
+  margin-top: 33px;
+  min-width: 323px;
+  padding: 12.1px 14.0px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-individual-buyer .flex-row-C61RwL {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 28px;
+  justify-content: flex-start;
+  margin-left: 2.0px;
+  margin-top: 33px;
+  min-width: 325px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-individual-buyer .imput-100-2P4qUJ {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 63px;
+  justify-content: flex-start;
+  margin-right: 1.0px;
+  margin-top: 13px;
+  min-width: 324px;
+  padding: 18px 13px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-individual-buyer .imput-100-C61RwL {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 63px;
+  justify-content: flex-start;
+  margin-right: 1.0px;
+  margin-top: 31px;
+  min-width: 324px;
+  padding: 18px 13px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-individual-buyer .imput-100-J1YQmd {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 63px;
+  justify-content: flex-start;
+  margin-right: 1.0px;
+  margin-top: 11px;
+  min-width: 324px;
+  padding: 18px 13px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-individual-buyer .imput-100-QxM5SU {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 63px;
+  justify-content: flex-start;
+  margin-right: 1.0px;
+  margin-top: 13px;
+  min-width: 324px;
+  padding: 18px 13px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-individual-buyer .imput-100-VMr6Om {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 63px;
+  justify-content: flex-start;
+  margin-right: 1.0px;
+  margin-top: 13px;
+  min-width: 324px;
+  padding: 18px 13px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-individual-buyer .imput-100-i4784111253-ETfRnS {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 24px;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  padding: 0;
+  position: relative;
+  resize: none;
+  text-align: left;
+  white-space: nowrap;
+  width: 276px;
+}
+.authentication-register-individual-buyer .imput-100-i4784111253-ETfRnS::placeholder {
+  color: #9098b199;
+}
+.authentication-register-individual-buyer .imput-100-i4784211253-UppLul {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 24px;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  padding: 0;
+  position: relative;
+  resize: none;
+  text-align: left;
+  white-space: nowrap;
+  width: 276px;
+}
+.authentication-register-individual-buyer .imput-100-i4784211253-UppLul::placeholder {
+  color: #9098b199;
+}
+.authentication-register-individual-buyer .imput-100-i4784311253-hrdCAf {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 24px;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  padding: 0;
+  position: relative;
+  resize: none;
+  text-align: left;
+  white-space: nowrap;
+  width: 276px;
+}
+.authentication-register-individual-buyer .imput-100-i4784311253-hrdCAf::placeholder {
+  color: #9098b199;
+}
+.authentication-register-individual-buyer .imput-100-i4784411253-cOFO29 {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 24px;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  padding: 0;
+  position: relative;
+  resize: none;
+  text-align: left;
+  white-space: nowrap;
+  width: 276px;
+}
+.authentication-register-individual-buyer .imput-100-i4784411253-cOFO29::placeholder {
+  color: #9098b199;
+}
+.authentication-register-individual-buyer .imput-100-i4784511253-O7pYL7 {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 24px;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  padding: 0;
+  position: relative;
+  resize: none;
+  text-align: left;
+  white-space: nowrap;
+  width: 276px;
+}
+.authentication-register-individual-buyer .imput-100-i4784511253-O7pYL7::placeholder {
+  color: #9098b199;
+}
+.authentication-register-individual-buyer .imput-100-i4784611253-qy5OlV {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 24px;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  padding: 0;
+  position: relative;
+  resize: none;
+  text-align: left;
+  white-space: nowrap;
+  width: 276px;
+}
+.authentication-register-individual-buyer .imput-100-i4784611253-qy5OlV::placeholder {
+  color: #9098b199;
+}
+.authentication-register-individual-buyer .imput-100-i4784711253-aZO6Rj {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 24px;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  padding: 0;
+  position: relative;
+  resize: none;
+  text-align: left;
+  white-space: nowrap;
+  width: 276px;
+}
+.authentication-register-individual-buyer .imput-100-i4784711253-aZO6Rj::placeholder {
+  color: #9098b199;
+}
+.authentication-register-individual-buyer .imput-100-mzXdH9 {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 63px;
+  justify-content: flex-start;
+  margin-right: 1.0px;
+  margin-top: 13px;
+  min-width: 324px;
+  padding: 18px 13px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-individual-buyer .imput-100-qr8e7q {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 63px;
+  justify-content: flex-start;
+  margin-right: 1.0px;
+  margin-top: 13px;
+  min-width: 324px;
+  padding: 18px 13px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-individual-buyer .registo-de-comp-ador-individual-C61RwL {
+  background-color: transparent;
+  color: var(--voodoo);
+  flex-shrink: 1;
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-l);
+  font-weight: 800;
+  height: auto;
+  letter-spacing: -0.30px;
+  line-height: 26.3px;
+  margin-left: 2.0px;
+  margin-top: 46px;
+  min-height: 52px;
+  min-width: 257px;
+  position: relative;
+  text-align: center;
+  width: 257px;
+}
+.authentication-register-individual-buyer .span0-i1HkJL {
+  color: var(--voodoo);
+  letter-spacing: -0.05px;
+}
+.authentication-register-individual-buyer .span1-i1HkJL {
+  color: #ff0000;
+  font-size: var(--font-size-l);
+  font-weight: 800;
+  letter-spacing: -0.06px;
+  line-height: 26.3px;
+}
+.authentication-register-individual-buyer .text-btn-generic-i47839226-Sts0rK {
+  background-color: transparent;
+  color: var(--white);
+  flex-shrink: 1;
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-weight: 700;
+  height: auto;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  min-height: 23px;
+  min-width: 293px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: 293px;
+}
+.authentication-register-individual-buyer .type-checkbox-dXBp89 {
+  background-color: var(--white);
+  border: 0;
+  flex-shrink: 1;
+  height: 28px;
+  padding: 0;
+  position: relative;
+  resize: none;
+  width: 28px;
+}
+.authentication-register-individual-buyer .voltar-BZ67jr {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 21px;
+  justify-content: center;
+  margin-bottom: 5.0px;
+  min-width: 6px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-individual-buyer .voltar-i119528148131-BZ67jr {
+  background-color: transparent;
+  color: var(--voodoo);
+  flex-shrink: 1;
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-l);
+  font-weight: 800;
+  height: auto;
+  letter-spacing: -0.30px;
+  line-height: 26.3px;
+  margin-left: 33px;
+  min-height: 26px;
+  min-width: 66px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.authentication-register-individual-buyer .voltar-svg-QgZt8l {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 23px;
+  margin-top: -1px;
+  position: relative;
+  width: 8px;
+}
