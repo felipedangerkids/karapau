@@ -16,9 +16,8 @@
             <div class="line-red-4eduM0">
 
             </div>
-            <div class="container">
-                <img class="mx-auto logo-4eduM0" src="{{ url('assets/img/logo@1x.png') }}" />
-            </div>
+            <div class="logo-4eduM0 container">
+                <img class="mx-auto logo-img-9mfXOU" src="{{ url('assets/img/logo.svg') }}" /></div>
         </div>
         <div class="imput-100-C61RwL">
             <input class="imput-100-i20343111253-ETfRnS" name="imput-100" placeholder="E-mail" type="email" required />

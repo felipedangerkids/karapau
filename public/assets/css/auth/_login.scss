@@ -193,13 +193,29 @@ input:focus {
       white-space: nowrap;
       width: auto;
 }
-.authentication-login .logo-4eduM0 {
-      background-color: transparent;
-      height: 151px;
-      left: 112px;
-      position: relative;
-      top: 44px;
-      width: 150px;
+.logo-4eduM0 {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    background-color: transparent;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    height: 150px;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    left: 112px;
+    min-width: 150px;
+    position: absolute;
+    top: 47px;
+    width: auto;
 }
 .authentication-login .overlap-group-C61RwL {
       background-color: transparent;
