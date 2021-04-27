@@ -4,10 +4,12 @@
 <input type="hidden" id="anPageName" name="page" value="authentication-register-individual-buyer" />
 <div class="container-center-horizontal">
       <div class="authentication-register-individual-buyer screen">
-            <div class="background-header-small-C61RwL">
-                  <div class="voltar-BZ67jr"><img class="voltar-svg-QgZt8l" src="img/voltar-svg@2x.svg" /></div>
-                  <div class="voltar-i119528148131-BZ67jr">Voltar</div>
-            </div>
+            <a href="javascript:history.back()">
+                  <div class="background-header-small-C61RwL">
+                        <div class="voltar-BZ67jr"><img class="voltar-svg-QgZt8l" src="{{ url('assets/img/voltar-svg@2x.svg') }}" /></div>
+                        <div class="voltar-i119528148131-BZ67jr">Voltar</div>
+                  </div>
+            </a>
             <div class="registo-de-comp-ador-individual-C61RwL">Registo de comprador individual</div>
             <div class="imput-100-C61RwL border-2px-cloud">
                   <input class="imput-100-i4784111253-ETfRnS poppins-normal-manatee-18px" name="imput-100"
@@ -42,7 +44,7 @@
             </div>
             <div class="flex-row-C61RwL">
                   <input class="type-checkbox-dXBp89 border-2px-cloud" name="119503" placeholder="type-checkbox"
-                        type="text" required />
+                        type="checkbox" required />
                   <div class="aceito-os-termos-e-condies-dXBp89">
                         <span class="span0-i1HkJL">Aceito os </span><span class="span1-i1HkJL">termos e condições</span>
                   </div>
