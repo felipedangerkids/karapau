@@ -24,7 +24,7 @@ class RedirectIfAuthenticated
             return redirect('/writer');
         }
         if ($guard == "seller" && Auth::guard($guard)->check()) {
-            return redirect('/seller');
+            return redirect('/seller-dashboard');
         }
         if (Auth::guard($guard)->check()) {
             return redirect('/home');
