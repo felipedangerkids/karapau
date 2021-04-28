@@ -1,0 +1,673 @@
+:root {
+  --cloud: #c7c7c7;
+  --manatee: #9098b1;
+  --voodoo: #4f3a57;
+  --white: #ffffff;
+
+  --font-size-l: 20px;
+  --font-size-m: 18px;
+
+  --font-family-poppins: "Poppins", Helvetica;
+}
+.poppins-normal-manatee-18px {
+  color: var(--manatee);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+.border-2px-cloud {
+  border: 2px solid var(--cloud);
+}
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700,800");
+* {
+  box-sizing: border-box;
+}
+.container-center-horizontal {
+  pointer-events: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.container-center-horizontal > * {
+  pointer-events: auto;
+  flex-shrink: 0;
+}
+.screen a {
+  text-decoration: none;
+  display: contents;
+}
+input:focus {
+  outline: none;
+}
+/* screen - authentication-register-seller */
+
+.authentication-register-seller {
+  align-items: center;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 1169px;
+  justify-content: flex-start;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 375px;
+}
+.authentication-register-seller .aceito-os-termos-e-condies-BdpSxK {
+  background-color: transparent;
+  color: transparent;
+  flex-shrink: 1;
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  height: auto;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  margin-left: 13px;
+  min-height: 28px;
+  min-width: 284px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: 284px;
+}
+.authentication-register-seller .background-header-small-C61RwL {
+  align-items: center;
+  background-color: transparent;
+  background-image: url(../img/background-header-small@2x.svg);
+  background-size: 100% 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 94px;
+  justify-content: flex-start;
+  min-width: 375px;
+  padding: 0 28px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-seller .btn-generic-C61RwL {
+  align-items: flex-start;
+  background-color: #36a6d4;
+  border-radius: 5.983438968658447px;
+  box-shadow: 0px 2.3933756351470947px 8.376814842224121px #0000000f;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 49px;
+  justify-content: flex-end;
+  margin-top: 23px;
+  min-width: 323px;
+  padding: 12.1px 14.0px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-seller .flex-row-C61RwL {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 63px;
+  justify-content: flex-start;
+  margin-right: 1.0px;
+  margin-top: 13px;
+  min-width: 324px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-seller .flex-row-VMr6Om {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 28px;
+  justify-content: flex-start;
+  margin-top: 23px;
+  min-width: 325px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-seller .imput-100-2P4qUJ {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 63px;
+  justify-content: flex-start;
+  margin-right: 1.0px;
+  margin-top: 13px;
+  min-width: 324px;
+  padding: 18px 13px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-seller .imput-100-C61RwL {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 63px;
+  justify-content: flex-start;
+  margin-right: 1.0px;
+  margin-top: 39px;
+  min-width: 324px;
+  padding: 18px 13px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-seller .imput-100-J1YQmd {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 63px;
+  justify-content: flex-start;
+  margin-right: 1.0px;
+  margin-top: 11px;
+  min-width: 324px;
+  padding: 18px 13px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-seller .imput-100-QxM5SU {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 63px;
+  justify-content: flex-start;
+  margin-right: 1.0px;
+  margin-top: 13px;
+  min-width: 324px;
+  padding: 18px 13px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-seller .imput-100-VMr6Om {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 63px;
+  justify-content: flex-start;
+  margin-right: 1.0px;
+  margin-top: 13px;
+  min-width: 324px;
+  padding: 18px 13px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-seller .imput-100-a5WPlX {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 63px;
+  justify-content: flex-start;
+  margin-right: 1.0px;
+  margin-top: 13px;
+  min-width: 324px;
+  padding: 18px 13px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-seller .imput-100-i4774411253-ETfRnS {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 24px;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  padding: 0;
+  position: relative;
+  resize: none;
+  text-align: left;
+  white-space: nowrap;
+  width: 276px;
+}
+.authentication-register-seller .imput-100-i4774411253-ETfRnS::placeholder {
+  color: #9098b199;
+}
+.authentication-register-seller .imput-100-i4776011253-UppLul {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 24px;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  padding: 0;
+  position: relative;
+  resize: none;
+  text-align: left;
+  white-space: nowrap;
+  width: 276px;
+}
+.authentication-register-seller .imput-100-i4776011253-UppLul::placeholder {
+  color: #9098b199;
+}
+.authentication-register-seller .imput-100-i4776311253-hrdCAf {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 24px;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  padding: 0;
+  position: relative;
+  resize: none;
+  text-align: left;
+  white-space: nowrap;
+  width: 276px;
+}
+.authentication-register-seller .imput-100-i4776311253-hrdCAf::placeholder {
+  color: #9098b199;
+}
+.authentication-register-seller .imput-100-i4776611253-cOFO29 {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 24px;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  padding: 0;
+  position: relative;
+  resize: none;
+  text-align: left;
+  white-space: nowrap;
+  width: 276px;
+}
+.authentication-register-seller .imput-100-i4776611253-cOFO29::placeholder {
+  color: #9098b199;
+}
+.authentication-register-seller .imput-100-i4776911253-O7pYL7 {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 24px;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  padding: 0;
+  position: relative;
+  resize: none;
+  text-align: left;
+  white-space: nowrap;
+  width: 276px;
+}
+.authentication-register-seller .imput-100-i4776911253-O7pYL7::placeholder {
+  color: #9098b199;
+}
+.authentication-register-seller .imput-100-i4777211253-qy5OlV {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 24px;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  padding: 0;
+  position: relative;
+  resize: none;
+  text-align: left;
+  white-space: nowrap;
+  width: 276px;
+}
+.authentication-register-seller .imput-100-i4777211253-qy5OlV::placeholder {
+  color: #9098b199;
+}
+.authentication-register-seller .imput-100-i4777511253-aZO6Rj {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 24px;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  padding: 0;
+  position: relative;
+  resize: none;
+  text-align: left;
+  white-space: nowrap;
+  width: 276px;
+}
+.authentication-register-seller .imput-100-i4777511253-aZO6Rj::placeholder {
+  color: #9098b199;
+}
+.authentication-register-seller .imput-100-i4788111253-gxxi7y {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 24px;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  padding: 0;
+  position: relative;
+  resize: none;
+  text-align: left;
+  white-space: nowrap;
+  width: 276px;
+}
+.authentication-register-seller .imput-100-i4788111253-gxxi7y::placeholder {
+  color: #9098b199;
+}
+.authentication-register-seller .imput-100-mzXdH9 {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 63px;
+  justify-content: flex-start;
+  margin-right: 1.0px;
+  margin-top: 13px;
+  min-width: 324px;
+  padding: 18px 13px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-seller .imput-100-qr8e7q {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 63px;
+  justify-content: flex-start;
+  margin-right: 1.0px;
+  margin-top: 13px;
+  min-width: 324px;
+  padding: 18px 13px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-seller .imput-50-AqYWVV {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 63px;
+  position: relative;
+  width: 159px;
+}
+.authentication-register-seller .imput-50-UnbuJE {
+  background-color: var(--white);
+  border-radius: 10px;
+  height: 63px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 157px;
+}
+.authentication-register-seller .imput-50-Xi618D {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 63px;
+  justify-content: flex-start;
+  margin-left: 10px;
+  min-width: 157px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-seller .imput-50-dXBp89 {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 63px;
+  justify-content: flex-start;
+  min-width: 157px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-seller .imput-50-i4786711255-oyqzX8 {
+  background-color: transparent;
+  border: 0;
+  height: 24px;
+  left: 15px;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  padding: 0;
+  position: absolute;
+  resize: none;
+  text-align: left;
+  top: 19px;
+  white-space: nowrap;
+  width: 131px;
+}
+.authentication-register-seller .imput-50-i4786711255-oyqzX8::placeholder {
+  color: #9098b199;
+}
+.authentication-register-seller .imput-50-i4787111255-UnbuJE {
+  background-color: transparent;
+  border: 0;
+  height: 24px;
+  left: 15px;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  padding: 0;
+  position: absolute;
+  resize: none;
+  text-align: left;
+  top: 19px;
+  white-space: nowrap;
+  width: 131px;
+}
+.authentication-register-seller .imput-50-i4787111255-UnbuJE::placeholder {
+  color: #9098b199;
+}
+.authentication-register-seller .imput-50-oyqzX8 {
+  background-color: var(--white);
+  border-radius: 10px;
+  height: 63px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 157px;
+}
+.authentication-register-seller .imput-50-xQrLAp {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 63px;
+  position: relative;
+  width: 159px;
+}
+.authentication-register-seller .imput-dropdown-100-0xY2k0 {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 16px;
+  position: relative;
+  width: 25px;
+}
+.authentication-register-seller .imput-dropdown-100-C61RwL {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 63px;
+  justify-content: flex-start;
+  margin-right: 3.0px;
+  margin-top: 14px;
+  min-width: 326px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-seller .imput-dropdown-100-PF8xVf {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 63px;
+  position: relative;
+  width: 328px;
+}
+.authentication-register-seller .imput-dropdown-100-i4787511327-xcwlBC {
+  background-color: transparent;
+  border: 0;
+  height: 24px;
+  left: 15px;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  padding: 0;
+  position: absolute;
+  resize: none;
+  text-align: left;
+  top: 20px;
+  white-space: nowrap;
+  width: 259px;
+}
+.authentication-register-seller .imput-dropdown-100-i4787511327-xcwlBC::placeholder {
+  color: #9098b199;
+}
+.authentication-register-seller .imput-dropdown-100-uSaiy1 {
+  align-items: flex-end;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  justify-content: flex-start;
+  left: 272px;
+  overflow: hidden;
+  padding: 11.1px 7.6px;
+  position: absolute;
+  top: 12px;
+  width: 40px;
+}
+.authentication-register-seller .imput-dropdown-100-xcwlBC {
+  background-color: var(--white);
+  border-radius: 10px;
+  height: 63px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 326px;
+}
+.authentication-register-seller .registo-de-vendedor-C61RwL {
+  background-color: transparent;
+  color: var(--voodoo);
+  flex-shrink: 1;
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-l);
+  font-weight: 800;
+  height: auto;
+  letter-spacing: -0.30px;
+  line-height: 26.3px;
+  margin-left: 2.0px;
+  margin-top: 39px;
+  min-height: 26px;
+  min-width: 257px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: 257px;
+}
+.authentication-register-seller .span0-ekT6x6 {
+  color: var(--voodoo);
+  letter-spacing: -0.05px;
+}
+.authentication-register-seller .span1-ekT6x6 {
+  color: #ff0000;
+  font-size: var(--font-size-l);
+  font-weight: 800;
+  letter-spacing: -0.06px;
+  line-height: 26.3px;
+}
+.authentication-register-seller .text-btn-generic-i47740226-Sts0rK {
+  background-color: transparent;
+  color: var(--white);
+  flex-shrink: 1;
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-weight: 700;
+  height: auto;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  min-height: 23px;
+  min-width: 293px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: 293px;
+}
+.authentication-register-seller .type-checkbox-BdpSxK {
+  background-color: var(--white);
+  border: 0;
+  flex-shrink: 1;
+  height: 28px;
+  padding: 0;
+  position: relative;
+  resize: none;
+  width: 28px;
+}
+.authentication-register-seller .voltar-BZ67jr {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 21px;
+  justify-content: center;
+  margin-bottom: 5.0px;
+  min-width: 6px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-seller .voltar-i119524148131-BZ67jr {
+  background-color: transparent;
+  color: var(--voodoo);
+  flex-shrink: 1;
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-l);
+  font-weight: 800;
+  height: auto;
+  letter-spacing: -0.30px;
+  line-height: 26.3px;
+  margin-left: 33px;
+  min-height: 26px;
+  min-width: 66px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.authentication-register-seller .voltar-svg-QgZt8l {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 23px;
+  margin-top: -1px;
+  position: relative;
+  width: 8px;
+}

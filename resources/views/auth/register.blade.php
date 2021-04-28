@@ -17,9 +17,11 @@
             <div class="logo-4eduM0 container">
                 <img class="mx-auto logo-img-9mfXOU" src="{{ url('assets/img/logo.svg') }}" /></div>
         </div>
-        <div class="btn-generic-C61RwL">
-            <div class="text-btn-generic-i119436226-Sts0rK">Registo de vendedor</div>
-        </div>
+        <a href="{{ url('seller') }}">
+            <div class="btn-generic-C61RwL">
+                <div class="text-btn-generic-i119436226-Sts0rK">Registo de vendedor</div>
+            </div>
+        </a>
         <a href="{{ url('buyer-choice') }}">
             <div class="btn-generic-VMr6Om">
                 <div class="text-btn-generic-i119439226-NLXNbA">Registo de comprador</div>

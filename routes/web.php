@@ -29,7 +29,7 @@ Auth::routes();
 
 Route::post('/login-custom', [CustomLoginConstroller::class, 'store'])->name('login.custom');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/seller-register', [SellerController::class, 'index']);
+Route::get('/seller', [SellerController::class, 'index']);
 Route::post('/seller-store', [SellerController::class, 'store'])->name('seller.register');
 
 Route::get('buyer-choice', [BuyerController::class, 'index']);
