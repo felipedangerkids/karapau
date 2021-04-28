@@ -14,17 +14,17 @@ class Seller extends Authenticatable
     protected $guard = 'seller';
 
     protected $fillable = [
-        'nickname',
         'name',
         'lastname',
         'email',
         'password',
         'telefone',
         'morada',
-        'localidade',
         'cep',
         'nif',
+        'iban',
         'porto',
+        'fishing_zone',
     ];
 
     /**

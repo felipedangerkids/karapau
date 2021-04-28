@@ -38,18 +38,17 @@ class SellerController extends Controller
     public function store(Request $request)
     {
         $data = $request->all();
-       $dados = Seller::create([
-            'nickname' =>   $data['nickname'],
-            'name' =>       $data['name'],
-            'lastname' =>   $data['lastname'],
-            'email' =>      $data['email'],
+        $dados = Seller::create([
+            'name' =>           $data['name'],
+            'lastname' =>       $data['lastname'],
+            'email' =>          $data['email'],
             'password' => Hash::make($request['password']),
-            'telefone' =>   $data['telefone'],
-            'morada' =>     $data['morada'],
-            'localidade' => $data['localidade'],
-            'cep' =>        $data['cep'],
-            'nif' =>        $data['nif'],
-            'porto' =>      $data['porto'],
+            'telefone' =>       $data['telefone'],
+            'morada' =>         $data['morada'],
+            'nif' =>            $data['nif'],
+            'iban' =>           $data['iban'],
+            'porto' =>          $data['porto'],
+            'fishing_zone' =>   $data['fishing_zone']
         ]);
 
         return redirect()->route('login')->with('success', 'Usuario criado com sucesso');

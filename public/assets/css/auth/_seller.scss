@@ -106,6 +106,9 @@ input:focus {
   padding: 12.1px 14.0px;
   position: relative;
   width: auto;
+  button{
+    border: none !important;
+  }
 }
 .authentication-register-seller .flex-row-C61RwL {
   align-items: flex-start;

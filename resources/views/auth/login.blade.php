@@ -19,16 +19,20 @@
             <div class="logo-4eduM0 container">
                 <img class="mx-auto logo-img-9mfXOU" src="{{ url('assets/img/logo.svg') }}" /></div>
         </div>
-        <div class="imput-100-C61RwL">
-            <input class="imput-100-i20343111253-ETfRnS" name="imput-100" placeholder="E-mail" type="email" required />
-        </div>
-        <div class="imput-100-VMr6Om">
-            <input class="imput-100-i20343411253-UppLul" name="imput-100" placeholder="Senha" type="password"
-                required />
-        </div>
-        <div class="btn-generic-C61RwL">
-            <div class="text-btn-generic-i203437226-Sts0rK">Login</div>
-        </div>
+        <form action="{{ route('login.custom') }}" method="POST">
+            @csrf
+            <div class="imput-100-C61RwL">
+                <input class="imput-100-i20343111253-ETfRnS" name="email" placeholder="E-mail" type="email"
+                    required />
+            </div>
+            <div class="imput-100-VMr6Om">
+                <input class="imput-100-i20343411253-UppLul" name="password" placeholder="Senha" type="password"
+                    required />
+            </div>
+            <div class="btn-generic-C61RwL">
+                <button type="submit" class="text-btn-generic-i203437226-Sts0rK">Login</button>
+            </div>
+        </form>
         <div class="esqueceu-a-senha-C61RwL">Esqueceu a senha?</div>
     </div>
 </div>

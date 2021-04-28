@@ -15,7 +15,6 @@ class CreateSellersTable extends Migration
     {
         Schema::create('sellers', function (Blueprint $table) {
             $table->id();
-            $table->string('nickname');
             $table->string('name');
             $table->string('lastname');
             $table->string('email')->unique();
@@ -23,10 +22,10 @@ class CreateSellersTable extends Migration
             $table->string('password');
             $table->string('telefone');
             $table->string('morada');
-            $table->string('localidade');
-            $table->string('cep');
             $table->string('nif');
+            $table->string('iban');
             $table->string('porto');
+            $table->string('fishing_zone');
             $table->timestamps();
         });
     }
