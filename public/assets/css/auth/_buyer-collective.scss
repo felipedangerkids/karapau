@@ -1,0 +1,776 @@
+:root {
+  --cloud: #c7c7c7;
+  --manatee: #9098b1;
+  --voodoo: #4f3a57;
+  --white: #ffffff;
+
+  --font-size-l: 20px;
+  --font-size-m: 18px;
+
+  --font-family-poppins: "Poppins", Helvetica;
+}
+.poppins-normal-manatee-18px {
+  color: var(--manatee);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+.poppins-normal-voodoo-18px {
+  color: var(--voodoo);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+.border-2px-cloud {
+  border: 2px solid var(--cloud);
+}
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700,800");
+* {
+  box-sizing: border-box;
+}
+.container-center-horizontal {
+  pointer-events: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.container-center-horizontal > * {
+  pointer-events: auto;
+  flex-shrink: 0;
+}
+.screen a {
+  text-decoration: none;
+  display: contents;
+}
+input:focus {
+  outline: none;
+}
+/* screen - authentication-register-collective-buyer */
+
+.authentication-register-collective-buyer {
+  align-items: center;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 1250px;
+  justify-content: flex-start;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 375px;
+}
+.authentication-register-collective-buyer .aceito-os-termos-e-condies-BdpSxK {
+  background-color: transparent;
+  color: transparent;
+  flex-shrink: 1;
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  height: auto;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  margin-left: 13px;
+  min-height: 28px;
+  min-width: 284px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: 284px;
+}
+.authentication-register-collective-buyer .background-header-small-0xy0vn {
+  align-items: center;
+  background-color: transparent;
+  background-image: url(../img/background-header-small@2x.svg);
+  background-size: 100% 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 94px;
+  justify-content: flex-start;
+  min-width: 375px;
+  padding: 0 28px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-collective-buyer .btn-generic-C61RwL {
+  align-items: flex-start;
+  background-color: #36a6d4;
+  border-radius: 5.983438968658447px;
+  box-shadow: 0px 2.3933756351470947px 8.376814842224121px #0000000f;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 49px;
+  justify-content: flex-end;
+  margin-right: 2.0px;
+  margin-top: 41px;
+  min-width: 323px;
+  padding: 12.1px 14.0px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-collective-buyer .flex-col-C61RwL {
+  align-items: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  height: auto;
+  justify-content: flex-start;
+  min-height: 890px;
+  position: relative;
+  width: 375px;
+}
+.authentication-register-collective-buyer .flex-col-Ie9Mvc {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  height: auto;
+  justify-content: flex-start;
+  margin-left: 7px;
+  min-height: 123px;
+  position: relative;
+  width: 115px;
+}
+.authentication-register-collective-buyer .flex-col-Xi618D {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  height: auto;
+  justify-content: flex-start;
+  margin-left: 7px;
+  min-height: 123px;
+  position: relative;
+  width: 71px;
+}
+.authentication-register-collective-buyer .flex-col-dXBp89 {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  height: auto;
+  justify-content: flex-start;
+  min-height: 127px;
+  position: relative;
+  width: 28px;
+}
+.authentication-register-collective-buyer .flex-col-ycScJA {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  height: auto;
+  justify-content: flex-start;
+  margin-left: 49px;
+  min-height: 127px;
+  position: relative;
+  width: 28px;
+}
+.authentication-register-collective-buyer .flex-row-C61RwL {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 127px;
+  justify-content: flex-start;
+  margin-right: 6.0px;
+  margin-top: 37px;
+  min-width: 305px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-collective-buyer .flex-row-VMr6Om {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 28px;
+  justify-content: flex-start;
+  margin-left: 14.0px;
+  margin-top: 30px;
+  min-width: 325px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-collective-buyer .hotelaria-YjijQ5 {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  margin-left: 3px;
+  margin-top: 25px;
+  min-height: 24px;
+  min-width: 82px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.authentication-register-collective-buyer .imput-100-0aLMTk {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 63px;
+  justify-content: flex-start;
+  margin-right: 1.0px;
+  margin-top: 11px;
+  min-width: 324px;
+  padding: 18px 13px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-collective-buyer .imput-100-0xy0vn {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 63px;
+  justify-content: flex-start;
+  margin-right: 1.0px;
+  margin-top: 31px;
+  min-width: 324px;
+  padding: 18px 13px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-collective-buyer .imput-100-4iD7zR {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 63px;
+  justify-content: flex-start;
+  margin-right: 1.0px;
+  margin-top: 13px;
+  min-width: 324px;
+  padding: 18px 13px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-collective-buyer .imput-100-OtmKqf {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 63px;
+  justify-content: flex-start;
+  margin-right: 1.0px;
+  margin-top: 13px;
+  min-width: 324px;
+  padding: 18px 13px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-collective-buyer .imput-100-exd5BQ {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 63px;
+  justify-content: flex-start;
+  margin-right: 1.0px;
+  margin-top: 13px;
+  min-width: 324px;
+  padding: 18px 13px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-collective-buyer .imput-100-i4778511253-dzsOr1 {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 24px;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  padding: 0;
+  position: relative;
+  resize: none;
+  text-align: left;
+  white-space: nowrap;
+  width: 276px;
+}
+.authentication-register-collective-buyer .imput-100-i4778511253-dzsOr1::placeholder {
+  color: #9098b199;
+}
+.authentication-register-collective-buyer .imput-100-i4778611253-Y0ZHMT {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 24px;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  padding: 0;
+  position: relative;
+  resize: none;
+  text-align: left;
+  white-space: nowrap;
+  width: 276px;
+}
+.authentication-register-collective-buyer .imput-100-i4778611253-Y0ZHMT::placeholder {
+  color: #9098b199;
+}
+.authentication-register-collective-buyer .imput-100-i4778711253-z4Bdtm {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 24px;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  padding: 0;
+  position: relative;
+  resize: none;
+  text-align: left;
+  white-space: nowrap;
+  width: 276px;
+}
+.authentication-register-collective-buyer .imput-100-i4778711253-z4Bdtm::placeholder {
+  color: #9098b199;
+}
+.authentication-register-collective-buyer .imput-100-i4778811253-2oxN5c {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 24px;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  padding: 0;
+  position: relative;
+  resize: none;
+  text-align: left;
+  white-space: nowrap;
+  width: 276px;
+}
+.authentication-register-collective-buyer .imput-100-i4778811253-2oxN5c::placeholder {
+  color: #9098b199;
+}
+.authentication-register-collective-buyer .imput-100-i4778911253-xxQsMW {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 24px;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  padding: 0;
+  position: relative;
+  resize: none;
+  text-align: left;
+  white-space: nowrap;
+  width: 276px;
+}
+.authentication-register-collective-buyer .imput-100-i4778911253-xxQsMW::placeholder {
+  color: #9098b199;
+}
+.authentication-register-collective-buyer .imput-100-i4779011253-0U0OJ3 {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 24px;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  padding: 0;
+  position: relative;
+  resize: none;
+  text-align: left;
+  white-space: nowrap;
+  width: 276px;
+}
+.authentication-register-collective-buyer .imput-100-i4779011253-0U0OJ3::placeholder {
+  color: #9098b199;
+}
+.authentication-register-collective-buyer .imput-100-i4779111253-DUxANG {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 24px;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  padding: 0;
+  position: relative;
+  resize: none;
+  text-align: left;
+  white-space: nowrap;
+  width: 276px;
+}
+.authentication-register-collective-buyer .imput-100-i4779111253-DUxANG::placeholder {
+  color: #9098b199;
+}
+.authentication-register-collective-buyer .imput-100-i4780911253-x1QmK3 {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 24px;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  padding: 0;
+  position: relative;
+  resize: none;
+  text-align: left;
+  white-space: nowrap;
+  width: 276px;
+}
+.authentication-register-collective-buyer .imput-100-i4780911253-x1QmK3::placeholder {
+  color: #9098b199;
+}
+.authentication-register-collective-buyer .imput-100-i4781011253-lQZbp4 {
+  background-color: transparent;
+  border: 0;
+  flex-shrink: 1;
+  height: 24px;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  padding: 0;
+  position: relative;
+  resize: none;
+  text-align: left;
+  white-space: nowrap;
+  width: 276px;
+}
+.authentication-register-collective-buyer .imput-100-i4781011253-lQZbp4::placeholder {
+  color: #9098b199;
+}
+.authentication-register-collective-buyer .imput-100-jmLuSL {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 63px;
+  justify-content: flex-start;
+  margin-right: 1.0px;
+  margin-top: 11px;
+  min-width: 324px;
+  padding: 18px 13px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-collective-buyer .imput-100-oV5UrE {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 63px;
+  justify-content: flex-start;
+  margin-right: 1.0px;
+  margin-top: 13px;
+  min-width: 324px;
+  padding: 18px 13px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-collective-buyer .imput-100-t6Autm {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 63px;
+  justify-content: flex-start;
+  margin-right: 1.0px;
+  margin-top: 13px;
+  min-width: 324px;
+  padding: 18px 13px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-collective-buyer .imput-100-uPORJx {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 63px;
+  justify-content: flex-start;
+  margin-right: 1.0px;
+  margin-top: 13px;
+  min-width: 324px;
+  padding: 18px 13px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-collective-buyer .outros-YjijQ5 {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  margin-left: 3px;
+  margin-top: 26px;
+  min-height: 24px;
+  min-width: 61px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.authentication-register-collective-buyer .peixaria-y0eQTV {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  min-height: 24px;
+  min-width: 71px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.authentication-register-collective-buyer .registo-de-comprador-coletivo-0xy0vn {
+  background-color: transparent;
+  color: var(--voodoo);
+  flex-shrink: 1;
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-l);
+  font-weight: 800;
+  height: auto;
+  letter-spacing: -0.30px;
+  line-height: 26.3px;
+  margin-left: 2.0px;
+  margin-top: 46px;
+  min-height: 52px;
+  min-width: 257px;
+  position: relative;
+  text-align: center;
+  width: 257px;
+}
+.authentication-register-collective-buyer .restaurao-YjijQ5 {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  min-height: 24px;
+  min-width: 115px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.authentication-register-collective-buyer .retalho-y0eQTV {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  margin-top: 25px;
+  min-height: 24px;
+  min-width: 69px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.authentication-register-collective-buyer .span0-ekT6x6 {
+  letter-spacing: -0.05px;
+}
+.authentication-register-collective-buyer .span1-ekT6x6 {
+  color: #ff0000;
+  font-size: var(--font-size-l);
+  font-weight: 800;
+  letter-spacing: -0.06px;
+  line-height: 26.3px;
+}
+.authentication-register-collective-buyer .text-btn-generic-i47829226-Sts0rK {
+  background-color: transparent;
+  color: var(--white);
+  flex-shrink: 1;
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-weight: 700;
+  height: auto;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  min-height: 23px;
+  min-width: 293px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: 293px;
+}
+.authentication-register-collective-buyer .type-checkbox-BdpSxK {
+  background-color: var(--white);
+  border: 0;
+  flex-shrink: 1;
+  height: 28px;
+  padding: 0;
+  position: relative;
+  resize: none;
+  width: 28px;
+}
+.authentication-register-collective-buyer .type-radio-0PZcXW {
+  background-color: transparent;
+  background-image: url(../img/type-radio@2x.svg);
+  background-size: 100% 100%;
+  border: 0;
+  flex-shrink: 1;
+  height: 28px;
+  padding: 0;
+  position: relative;
+  resize: none;
+  width: 28px;
+}
+.authentication-register-collective-buyer .type-radio-9HOxau {
+  background-color: transparent;
+  background-image: url(../img/type-radio@2x.svg);
+  background-size: 100% 100%;
+  border: 0;
+  flex-shrink: 1;
+  height: 28px;
+  padding: 0;
+  position: relative;
+  resize: none;
+  width: 28px;
+}
+.authentication-register-collective-buyer .type-radio-GlNH56 {
+  background-color: transparent;
+  background-image: url(../img/type-radio@2x.svg);
+  background-size: 100% 100%;
+  border: 0;
+  flex-shrink: 1;
+  height: 28px;
+  margin-top: 24px;
+  padding: 0;
+  position: relative;
+  resize: none;
+  width: 28px;
+}
+.authentication-register-collective-buyer .type-radio-RIFvxp {
+  background-color: transparent;
+  background-image: url(../img/type-radio@2x.svg);
+  background-size: 100% 100%;
+  border: 0;
+  flex-shrink: 1;
+  height: 28px;
+  margin-top: 24px;
+  padding: 0;
+  position: relative;
+  resize: none;
+  width: 28px;
+}
+.authentication-register-collective-buyer .type-radio-ZiuGWJ {
+  background-color: transparent;
+  background-image: url(../img/type-radio@2x.svg);
+  background-size: 100% 100%;
+  border: 0;
+  flex-shrink: 1;
+  height: 28px;
+  margin-top: 19px;
+  padding: 0;
+  position: relative;
+  resize: none;
+  width: 28px;
+}
+.authentication-register-collective-buyer .type-radio-gNHDIV {
+  background-color: transparent;
+  background-image: url(../img/type-radio@2x.svg);
+  background-size: 100% 100%;
+  border: 0;
+  flex-shrink: 1;
+  height: 28px;
+  margin-top: 19px;
+  padding: 0;
+  position: relative;
+  resize: none;
+  width: 28px;
+}
+.authentication-register-collective-buyer .varina-y0eQTV {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: -0.27px;
+  line-height: 23.7px;
+  margin-top: 26px;
+  min-height: 24px;
+  min-width: 60px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.authentication-register-collective-buyer .voltar-Ss3vOK {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 21px;
+  justify-content: center;
+  margin-bottom: 5.0px;
+  min-width: 6px;
+  position: relative;
+  width: auto;
+}
+.authentication-register-collective-buyer .voltar-i119531148131-Ss3vOK {
+  background-color: transparent;
+  color: var(--voodoo);
+  flex-shrink: 1;
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-l);
+  font-weight: 800;
+  height: auto;
+  letter-spacing: -0.30px;
+  line-height: 26.3px;
+  margin-left: 33px;
+  min-height: 26px;
+  min-width: 66px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.authentication-register-collective-buyer .voltar-svg-rBQ6Rv {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 23px;
+  margin-top: -1px;
+  position: relative;
+  width: 8px;
+}

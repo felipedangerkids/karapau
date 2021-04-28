@@ -22,9 +22,11 @@
                         <div class="text-btn-generic-i119481226-Sts0rK">Comprador individual</div>
                   </div>
             </a>
-            <div class="btn-generic-VMr6Om">
-                  <div class="text-btn-generic-i119482226-NLXNbA">Comprador coletivo</div>
-            </div>
+            <a href="{{ url('buyer-collective') }}">
+                  <div class="btn-generic-VMr6Om">
+                        <div class="text-btn-generic-i119482226-NLXNbA">Comprador coletivo</div>
+                  </div>
+            </a>
       </div>
 </div>
 

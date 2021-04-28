@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\Auth\BuyerController;
+use App\Http\Controllers\Auth\CollectiveBuyer;
+use App\Http\Controllers\Auth\CollectiveBuyerController;
 use App\Http\Controllers\Auth\CustomLoginConstroller;
 use App\Http\Controllers\Auth\IndividualBuyerController;
 use App\Http\Controllers\Auth\SellerController;
@@ -32,4 +34,5 @@ Route::post('/seller-store', [SellerController::class, 'store'])->name('seller.r
 
 Route::get('buyer-choice', [BuyerController::class, 'index']);
 Route::get('buyer-individual', [IndividualBuyerController::class, 'index']);
+Route::get('buyer-collective', [CollectiveBuyerController::class, 'index']);
 Route::post('buyer-store', [BuyerController::class, 'store'])->name('buyer.register');
