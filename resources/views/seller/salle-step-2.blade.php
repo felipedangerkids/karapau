@@ -55,6 +55,7 @@
                                           <select
                                                 class="imput-dropdown-50-i1136111309-KTw77A poppins-normal-manatee-18px"
                                                 name="qty" id="">
+                                                <option value="">Qtd.</option>
                                                 <option value="1">10 kg</option>
                                                 <option value="2">50 kg</option>
                                                 <option value="3">100 kg</option>
@@ -68,6 +69,7 @@
                                           <select
                                                 class="imput-dropdown-50-i1136711309-v1nxW5 poppins-normal-manatee-18px"
                                                 name="unity" id="">
+                                                <option >Unid.</option>
                                                 <option value="1">10</option>
                                                 <option value="2">50</option>
                                                 <option value="3">100</option>
@@ -82,6 +84,7 @@
                                           <select
                                                 class="imput-dropdown-50-i1137311309-XdYlS2 poppins-normal-manatee-18px"
                                                 name="size" id="">
+                                                <option >Tam.</option>
                                                 <option value="1">T1</option>
                                                 <option value="2">T2</option>
                                                 <option value="3">T3</option>
@@ -96,6 +99,7 @@
                                           <select
                                                 class="imput-dropdown-50-i1137411309-UMSVgd poppins-normal-manatee-18px"
                                                 name="art" id="">
+                                                <option>Arte</option>
                                                 <option value="1">Rede</option>
                                                 <option value="2">Vara</option>
                                                 >
