@@ -10,7 +10,7 @@
             <a href="{{ url('login') }}">
                 <div class="login-4eduM0">Login</div>
             </a>
-            <a href="{{ url('register') }}">
+            <a href="{{ url('seller') }}">
                 <div class="registo-4eduM0">Registo</div>
             </a>
             <div class="line-red-4eduM0">
