@@ -6,6 +6,7 @@ use App\Http\Controllers\Auth\CollectiveBuyerController;
 use App\Http\Controllers\Auth\CustomLoginConstroller;
 use App\Http\Controllers\Auth\IndividualBuyerController;
 use App\Http\Controllers\Auth\SellerController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\Seller\DashboardController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -38,4 +39,10 @@ Route::get('buyer-individual', [IndividualBuyerController::class, 'index']);
 Route::get('buyer-collective', [CollectiveBuyerController::class, 'index']);
 Route::post('buyer-store', [BuyerController::class, 'store'])->name('buyer.register');
 
-Route::get('seller-dashboard', [DashboardController::class, 'index'])->middleware('auth:seller');
+Route::get('seller-dashboard', [DashboardController::class, 'index'])->middleware('auth:seller')->name('dashboard');
+Route::get('seller-step-one', [ProductController::class, 'stepOne'])->middleware('auth:seller');
+Route::post('seller-step-one-post', [ProductController::class, 'postCreateStepOne'])->middleware('auth:seller');
+Route::get('seller-step-two', [ProductController::class, 'stepTwo'])->middleware('auth:seller')->name('products.create.step.two');
+Route::post('seller-step-two-post', [ProductController::class, 'postCreateStepTwo']);
+
+Route::any('sessionforget', [ProductController::class, 'store']);

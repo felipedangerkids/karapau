@@ -10,11 +10,15 @@
                         <div class="header-top-y1HRxC">
                               <div class="header-top-QEP1KW">
                                     <div class="header-top-E1CjAw">
-                                          <img class="header-top-e7Y63y" src="{{ url('assets/img/header-top-3@2x.svg') }}" />
-                                          <img class="header-top-pWfEUz" src="{{ url('assets/img/header-top@2x.svg') }}" />
+                                          <img class="header-top-e7Y63y"
+                                                src="{{ url('assets/img/header-top-3@2x.svg') }}" />
+                                          <img class="header-top-pWfEUz"
+                                                src="{{ url('assets/img/header-top@2x.svg') }}" />
                                           <div class="overlap-group1-e7Y63y">
-                                                <img class="header-top-3WOilC" src="{{ url('assets/img/header-top-1@2x.svg') }}" />
-                                                <img class="header-top-58lGHL" src="{{ url('assets/img/header-top-2@2x.svg') }}" />
+                                                <img class="header-top-3WOilC"
+                                                      src="{{ url('assets/img/header-top-1@2x.svg') }}" />
+                                                <img class="header-top-58lGHL"
+                                                      src="{{ url('assets/img/header-top-2@2x.svg') }}" />
                                           </div>
                                     </div>
                               </div>
@@ -23,7 +27,8 @@
                         <div class="id-7896-y1HRxC poppins-extra-bold-voodoo-20px">ID {{ Auth::user()->id }}</div>
                         <div class="edit-off-y1HRxC"></div>
                         <div class="icone-notificacoes-y1HRxC">
-                              <img class="icone-notificacoes-Jvl6wW" src="{{ url('assets/img/icone-notificacoes@2x.svg') }}" />
+                              <img class="icone-notificacoes-Jvl6wW"
+                                    src="{{ url('assets/img/icone-notificacoes@2x.svg') }}" />
                         </div>
                         <div class="btn-status-y1HRxC">
                               <div class="btn-status-YqGQFE">
@@ -31,18 +36,23 @@
                               </div>
                         </div>
                   </div>
-                  <div class="line-gray-0xy0vn"><img class="line-gray-CTEP0h" src="{{ url('assets/img/line-gray@2x.svg') }}" /></div>
-                  <div class="ol-emanuel-bettencourt-0xy0vn poppins-extra-bold-voodoo-20px">Olá, {{ Auth::user()->name }} {{ Auth::user()->lastname }}
+                  <div class="line-gray-0xy0vn"><img class="line-gray-CTEP0h"
+                              src="{{ url('assets/img/line-gray@2x.svg') }}" /></div>
+                  <div class="ol-emanuel-bettencourt-0xy0vn poppins-extra-bold-voodoo-20px">Olá,
+                        {{ Auth::user()->name }} {{ Auth::user()->lastname }}
                   </div>
-                  <div class="line-gray-oV5UrE"><img class="line-gray-HmGor3" src="{{ url('assets/img/line-gray@2x.svg') }}" /></div>
+                  <div class="line-gray-oV5UrE"><img class="line-gray-HmGor3"
+                              src="{{ url('assets/img/line-gray@2x.svg') }}" /></div>
                   <div class="flex-row-0xy0vn">
-                        <div class="group-18214-GyJUNH">
-                              <div class="btnsquare-RNjGA6">
-                                    <div class="btnsquare-2dQ3uj"></div>
-                                    <div class="btnsquare-i47149232-2dQ3uj poppins-bold-voodoo-18px">Vender</div>
+                        <a href="{{ url('seller-step-one') }}">
+                              <div class="group-18214-GyJUNH">
+                                    <div class="btnsquare-RNjGA6">
+                                          <div class="btnsquare-2dQ3uj"></div>
+                                          <div class="btnsquare-i47149232-2dQ3uj poppins-bold-voodoo-18px">Vender</div>
+                                    </div>
+                                    <div class="plus-off-RNjGA6"></div>
                               </div>
-                              <div class="plus-off-RNjGA6"></div>
-                        </div>
+                        </a>
                         <div class="overlap-group1-GyJUNH">
                               <div class="group-18213-v6Glvx">
                                     <div class="btnsquare-zqxvsC">
@@ -69,7 +79,8 @@
                         <div class="text-btn-generic-i47157226-Chx0yi">MEUS GANHOS</div>
                   </div>
                   <div class="peixes-a-venda-na-plataforma-0xy0vn">Peixes a venda na plataforma</div>
-                  <div class="line-gray-4iD7zR"><img class="line-gray-2NarAi" src="{{ url('assets/img/line-gray@2x.svg') }}" /></div>
+                  <div class="line-gray-4iD7zR"><img class="line-gray-2NarAi"
+                              src="{{ url('assets/img/line-gray@2x.svg') }}" /></div>
             </div>
             <div class="flex-row-C61RwL">
                   <div class="espcie-dXBp89 poppins-extra-bold-voodoo-20px">Espécie</div>
@@ -80,7 +91,8 @@
             <div class="flex-col-VMr6Om">
                   <div class="flex-col-lcFreP">
                         <div class="flex-col-APIgQa">
-                              <div class="line-gray-mu6cJe"><img class="line-gray-slSzAn" src="{{ url('assets/img/line-gray@2x.svg') }}" />
+                              <div class="line-gray-mu6cJe"><img class="line-gray-slSzAn"
+                                          src="{{ url('assets/img/line-gray@2x.svg') }}" />
                               </div>
                               <div class="flex-row-mu6cJe">
                                     <div class="carapau-t2a-O8Us0i poppins-normal-voodoo-15px">CARAPAU<br />T2/A</div>
@@ -91,12 +103,13 @@
                                           <div class="x240000-kIml3S poppins-normal-red-15px">24:00:00</div>
                                     </div>
                               </div>
-                              <div class="line-gray-F49W2z"><img class="line-gray-dXQevO" src="{{ url('assets/img/line-gray@2x.svg') }}" />
+                              <div class="line-gray-F49W2z"><img class="line-gray-dXQevO"
+                                          src="{{ url('assets/img/line-gray@2x.svg') }}" />
                               </div>
                         </div>
-      
+
                   </div>
-                 
+
             </div>
       </div>
 </div>
