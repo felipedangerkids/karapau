@@ -94,10 +94,16 @@
                               <div class="line-gray-mu6cJe"><img class="line-gray-slSzAn"
                                           src="{{ url('assets/img/line-gray@2x.svg') }}" />
                               </div>
+                              @foreach ($products as $product)
                               <div class="flex-row-mu6cJe">
-                                    <div class="carapau-t2a-O8Us0i poppins-normal-voodoo-15px">CARAPAU<br />T2/A</div>
+                                    <div class="carapau-t2a-O8Us0i poppins-normal-voodoo-15px">
+                                          @if($product->especie == 1) Carapau @elseif($product->especie == 2) Tilipia @elseif($product->especie == 3) Cascudo @endif<br />T2/A
+                                    
+                                    
+                                    
+                                    </div>
                                     <div class="x1000-O8Us0i poppins-normal-voodoo-15px">10,00</div>
-                                    <div class="x270-O8Us0i poppins-normal-voodoo-15px">€ 2,70</div>
+                                    <div class="x270-O8Us0i poppins-normal-voodoo-15px">€ {{ $product->price }}</div>
                                     <div class="flex-col-O8Us0i">
                                           <div class="timer-kIml3S"></div>
                                           <div class="x240000-kIml3S poppins-normal-red-15px">24:00:00</div>
@@ -106,6 +112,8 @@
                               <div class="line-gray-F49W2z"><img class="line-gray-dXQevO"
                                           src="{{ url('assets/img/line-gray@2x.svg') }}" />
                               </div>
+                              @endforeach
+
                         </div>
 
                   </div>
