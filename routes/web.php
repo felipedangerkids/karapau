@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
+use App\Http\Controllers\Admin\PeixeController;
 use App\Http\Controllers\Admin\PortoController;
 use App\Http\Controllers\Auth\BuyerController;
 use App\Http\Controllers\Auth\CollectiveBuyer;
@@ -56,6 +57,9 @@ Route::any('sessionforget', [ProductController::class, 'store']);
 Route::get('admin/cadastros', [AdminDashboardController::class, 'cadastros']);
 
 Route::get('admin/cadastros/portos', [AdminDashboardController::class, 'portos']);
+Route::get('admin/cadastros/peixes', [AdminDashboardController::class, 'peixes']);
 
 Route::post('admin/cadastros/portos/store', [PortoController::class, 'store']);
 Route::any('admin/cadastros/portos/delete/{id}', [PortoController::class, 'destroy']);
+
+Route::post('admin/cadastros/peixe/store', [PeixeController::class, 'store']);

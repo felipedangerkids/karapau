@@ -25,15 +25,17 @@
       </div>
       <!-- /.col -->
       <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="info-box">
-                  <span class="info-box-icon bg-dark"><i class="fas fa-plus"></i></span>
+            <a href="{{ url('admin/cadastros/peixes') }}">
+                  <div class="info-box">
+                        <span class="info-box-icon bg-dark"><i class="fas fa-plus"></i></span>
 
-                  <div class="info-box-content">
-                        <span class="info-box-text">Cadastros de Peixes</span>
+                        <div class="info-box-content">
+                              <span class="info-box-text">Cadastros de Peixes</span>
 
+                        </div>
+                        <!-- /.info-box-content -->
                   </div>
-                  <!-- /.info-box-content -->
-            </div>
+            </a>
             <!-- /.info-box -->
       </div>
       <!-- /.col -->

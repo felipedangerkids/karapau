@@ -1,13 +1,12 @@
 @extends('adminlte::page')
 
-@section('title', 'Portos')
+@section('title', 'Peixes')
 
 @section('content_header')
-<h1>Portos</h1>
+<h1>Peixes</h1>
 @stop
 
 @section('content')
-
 <div class="row">
       <div class="col-12">
             <div class="card">
@@ -15,7 +14,7 @@
                         <h3 class="card-title">Todos os portos</h3>
 
                         <button data-toggle="modal" data-target="#exampleModal" class="btn btn-dark ml-2"><i
-                                    class="fas fa-plus"></i> Add novo Porto</button>
+                                    class="fas fa-plus"></i> Add novo Peixe</button>
 
                         <div class="card-tools">
                               <div class="input-group input-group-sm" style="width: 150px;">
@@ -36,21 +35,26 @@
                                     <tr>
                                           <th>ID</th>
                                           <th>Nome</th>
-                                          <th>Localização</th>
+                                          <th>Espécie</th>
                                           <th>Status</th>
                                           <th style="width: 250px">Ação</th>
                                     </tr>
                               </thead>
                               <tbody>
-                                    @foreach ($portos as $porto)
+                                    @foreach ($peixes as $peixe)
                                     <tr>
-                                          <td>{{ $porto->id }}</td>
-                                          <td>{{ $porto->name }}</td>
-                                          <td>{{ $porto->localization }}</td>
+                                          <td>{{ $peixe->id }}</td>
+                                          <td>{{ $peixe->nome }}</td>
+                                          <td>{{ $peixe->especie }}</td>
                                           <td><span class="tag tag-success">Ativo</span></td>
                                           <td>
-                                               <a href="{{ url('admin/cadastros/portos/delete/'. $porto->id) }}"> <button onclick="return confirm('Você tem certeza que gostaria de deletar este porto?');" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i> Apagar</button></a>
-                                                <button class="btn btn-primary btn-sm"><i class="fas fa-pencil-alt"></i> Editar</button>
+                                                <a href="{{ url('admin/cadastros/portos/delete/'. $peixe->id) }}">
+                                                      <button
+                                                            onclick="return confirm('Você tem certeza que gostaria de deletar este peixe?');"
+                                                            class="btn btn-danger btn-sm"><i class="fas fa-trash"></i>
+                                                            Apagar</button></a>
+                                                <button class="btn btn-primary btn-sm"><i class="fas fa-pencil-alt"></i>
+                                                      Editar</button>
                                           </td>
                                     </tr>
                                     @endforeach
@@ -80,32 +84,44 @@
 
                               <!-- /.card-header -->
                               <!-- form start -->
-                              <form role="form" method="POST" action="{{ url('admin/cadastros/portos/store') }}">
+                              <form role="form" method="POST" action="{{ url('admin/cadastros/peixe/store') }}">
                                     <div class="card-body">
                                           @csrf
                                           <div class="form-group">
-                                                <label for="exampleInputEmail1">Nome do Proto</label>
-                                                <input type="text" name="name" class="form-control"
-                                                      id="exampleInputEmail1" placeholder="Coloque o nome do Porto">
+                                                <label for="exampleInputEmail1">Nome do Peixe</label>
+                                                <input type="text" name="nome" class="form-control"
+                                                      id="exampleInputEmail1" placeholder="Coloque o nome do Peixe">
                                           </div>
                                           <div class="form-group">
-                                                <label for="exampleInputEmail1">Localização</label>
-                                                <input type="text" name="localization" class="form-control"
+                                                <label for="exampleInputEmail1">Especie</label>
+                                                <input type="text" name="especie" class="form-control"
                                                       id="exampleInputEmail1"
-                                                      placeholder="Coloque a localização do Porto">
+                                                      placeholder="Coloque a espécie do peixe">
                                           </div>
                                           <div class="form-group">
-                                                <label for="exampleInputEmail1">Maps</label>
-                                                <input type="text" name="maps" class="form-control"
+                                                <label for="exampleInputEmail1">Nome Cientifico</label>
+                                                <input type="text" name="nome_cientifico" class="form-control"
                                                       id="exampleInputEmail1"
-                                                      placeholder="Insira cordenada do google maps ou mapbox">
+                                                      placeholder="Coloco o nome cientifico do peixe">
+                                          </div>
+                                          <div class="form-group">
+                                                <label for="exampleInputEmail1">Código FAO</label>
+                                                <input type="text" name="codigo_fao" class="form-control"
+                                                      id="exampleInputEmail1"
+                                                      placeholder="Coloco o código fao">
+                                          </div>
+                                          <div class="form-group">
+                                                <label for="exampleInputEmail1">Código LOTA</label>
+                                                <input type="text" name="codigo_lota" class="form-control"
+                                                      id="exampleInputEmail1"
+                                                      placeholder="Coloque o código lota">
                                           </div>
 
                                           <div class="form-group">
-                                                <label for="exampleInputFile">Foto do Porto</label>
+                                                <label for="exampleInputFile">Foto do Peixe</label>
                                                 <div class="input-group">
                                                       <div class="custom-file">
-                                                            <input type="file"  class="custom-file-input"
+                                                            <input type="file" class="custom-file-input"
                                                                   id="exampleInputFile">
                                                             <label class="custom-file-label"
                                                                   for="exampleInputFile">Escolher Arquivo</label>
