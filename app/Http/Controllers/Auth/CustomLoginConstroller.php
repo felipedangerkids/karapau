@@ -41,13 +41,13 @@ class CustomLoginConstroller extends Controller
             'password' => 'required|min:6'
         ]);
 
-        if (Auth::guard('buyer')->attempt(['email' => $request->email, 'password' => $request->password], $request->get('remember'))) {
+        // if (Auth::guard('buyer')->attempt(['email' => $request->email, 'password' => $request->password], $request->get('remember'))) {
 
-            return redirect()->intended('/home');
-        }
+        //     return redirect()->intended('/home');
+        // }
         if (Auth::guard('seller')->attempt(['email' => $request->email, 'password' => $request->password], $request->get('remember'))) {
 
-            return redirect()->intended('/home');
+            return redirect()->intended('seller-dashboard');
         }
         if (Auth::guard('web')->attempt(['email' => $request->email, 'password' => $request->password], $request->get('remember'))) {
 
