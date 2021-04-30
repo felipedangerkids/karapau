@@ -20,14 +20,23 @@
                 <img class="mx-auto logo-img-9mfXOU" src="{{ url('assets/img/logo.svg') }}" /></div>
         </div>
         <form action="{{ route('login.custom') }}" method="POST">
+            @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+            @endif
             @csrf
             <div class="imput-100-C61RwL">
-                <input class="imput-100-i20343111253-ETfRnS {{ $errors->has('email') ? 'is-invalid' : '' }}" name="email" placeholder="E-mail" type="email"
-                    required />
+                <input class="imput-100-i20343111253-ETfRnS {{ $errors->has('email') ? 'is-invalid' : '' }}"
+                    name="email" placeholder="E-mail" type="email" required />
             </div>
             <div class="imput-100-VMr6Om">
-                <input class="imput-100-i20343411253-UppLul {{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" placeholder="Senha" type="password"
-                    required />
+                <input class="imput-100-i20343411253-UppLul {{ $errors->has('password') ? ' is-invalid' : '' }}"
+                    name="password" placeholder="Senha" type="password" required />
             </div>
             <div class="btn-generic-C61RwL">
                 <button type="submit" class="text-btn-generic-i203437226-Sts0rK">Login</button>
