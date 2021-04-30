@@ -236,6 +236,30 @@ return [
             'icon'        => 'fas fa-plus',
             'label_color' => 'success',
         ],
+        [
+            'text'        => 'Vendas',
+            'url'         => 'admin/vendas',
+            'icon'        => 'fas fa-list',
+            'label_color' => 'success',
+        ],
+        [
+            'text'        => 'Clientes',
+            'url'         => 'admin/vendas',
+            'icon'        => 'fas fa-user-friends',
+            'label_color' => 'success',
+        ],
+        [
+            'text'        => 'Pescadores',
+            'url'         => 'admin/vendas',
+            'icon'        => 'fas fa-people-carry',
+            'label_color' => 'success',
+        ],
+        [
+            'text'        => 'Entregas',
+            'url'         => 'admin/vendas',
+            'icon'        => 'fas fa-shipping-fast',
+            'label_color' => 'success',
+        ],
         ['header' => 'account_settings'],
         [
             'text' => 'profile',
