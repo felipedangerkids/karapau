@@ -126,7 +126,7 @@
                         <div
                               class="imput-100-BdpSxK border-2px-cloud {{ $errors->has('price') ? ' border-error' : '' }}">
                               <input class="imput-100-i1391111253-YEGizG poppins-normal-manatee-18px" name="price"
-                                    placeholder="€ 000,00" type="text" id="price" onkeyup="getPriceValue()" required />
+                                    placeholder="€ 000,00" type="number" id="price" onkeyup="getPriceValue()" required />
                         </div>
                         <div class="overlap-group1-BdpSxK">
                               <div class="rectangle-5-q9xEPe"></div>
