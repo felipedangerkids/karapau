@@ -22,11 +22,11 @@
         <form action="{{ route('login.custom') }}" method="POST">
             @csrf
             <div class="imput-100-C61RwL">
-                <input class="imput-100-i20343111253-ETfRnS" name="email" placeholder="E-mail" type="email"
+                <input class="imput-100-i20343111253-ETfRnS {{ $errors->has('email') ? 'is-invalid' : '' }}" name="email" placeholder="E-mail" type="email"
                     required />
             </div>
             <div class="imput-100-VMr6Om">
-                <input class="imput-100-i20343411253-UppLul" name="password" placeholder="Senha" type="password"
+                <input class="imput-100-i20343411253-UppLul {{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" placeholder="Senha" type="password"
                     required />
             </div>
             <div class="btn-generic-C61RwL">
