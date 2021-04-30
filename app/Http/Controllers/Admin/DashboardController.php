@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Controllers\Controller;
+use App\Models\Porto;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class DashboardController extends Controller
 {
@@ -14,6 +15,7 @@ class DashboardController extends Controller
 
     public function portos()
     {
-        return view('admin.pages.portos');
+        $portos = Porto::all();
+        return view('admin.pages.portos', compact('portos'));
     }
 }

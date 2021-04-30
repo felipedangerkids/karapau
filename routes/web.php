@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
+use App\Http\Controllers\Admin\PortoController;
 use App\Http\Controllers\Auth\BuyerController;
 use App\Http\Controllers\Auth\CollectiveBuyer;
 use App\Http\Controllers\Auth\CollectiveBuyerController;
@@ -55,3 +56,5 @@ Route::any('sessionforget', [ProductController::class, 'store']);
 Route::get('admin/cadastros', [AdminDashboardController::class, 'cadastros']);
 
 Route::get('admin/cadastros/portos', [AdminDashboardController::class, 'portos']);
+
+Route::post('admin/cadastros/portos/store', [PortoController::class, 'store']);
