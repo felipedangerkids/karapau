@@ -30,9 +30,11 @@
                               <div class="text-btn-generic-i1484226-GfAHNY poppins-bold-white-18px">Alterar</div>
                         </div>
                   </a>
-                  <div class="line-gray-4eduM0"><img class="line-gray-yNHlVK" src="{{ url('assets/img/line-gray@2x.svg') }}" /></div>
+                  <div class="line-gray-4eduM0"><img class="line-gray-yNHlVK"
+                              src="{{ url('assets/img/line-gray@2x.svg') }}" /></div>
             </div>
             <form action="{{ url('seller-step-two-post') }}" method="POST">
+
                   @csrf
                   <div class="group-1-C61RwL">
                         <div class="imput-dropdown-100-VyzZeT">
@@ -50,10 +52,10 @@
                         <div class="flex-row-VyzZeT">
                               <div class="imput-dropdown-50-SxxATt">
                                     <div class="imput-dropdown-50-ypvSpm">
-                                          <div class="imput-dropdown-50-KTw77A border-2px-cloud"></div>
+                                          <div class="imput-dropdown-50-KTw77A border-2px-cloud {{ $errors->has('qty') ? ' border-error' : '' }}"></div>
 
                                           <select
-                                                class="imput-dropdown-50-i1136111309-KTw77A poppins-normal-manatee-18px"
+                                                class="imput-dropdown-50-i1136111309-KTw77A poppins-normal-manatee-18px "
                                                 name="qty" id="">
                                                 <option value="">Qtd.</option>
                                                 <option value="1">10 kg</option>
@@ -64,12 +66,12 @@
                               </div>
                               <div class="imput-dropdown-50-kY3o9z">
                                     <div class="imput-dropdown-50-YQaWJm">
-                                          <div class="imput-dropdown-50-v1nxW5 border-2px-cloud"></div>
+                                          <div class="imput-dropdown-50-v1nxW5 border-2px-cloud {{ $errors->has('unity') ? ' border-error' : '' }}"></div>
 
                                           <select
                                                 class="imput-dropdown-50-i1136711309-v1nxW5 poppins-normal-manatee-18px"
                                                 name="unity" id="">
-                                                <option >Unid.</option>
+                                                <option value="">Unid.</option>
                                                 <option value="1">10</option>
                                                 <option value="2">50</option>
                                                 <option value="3">100</option>
@@ -80,11 +82,11 @@
                         <div class="flex-row-ri4jeA">
                               <div class="imput-dropdown-50-WyERLE">
                                     <div class="imput-dropdown-50-M21geM">
-                                          <div class="imput-dropdown-50-XdYlS2 border-2px-cloud"></div>
+                                          <div class="imput-dropdown-50-XdYlS2 border-2px-cloud {{ $errors->has('size') ? ' border-error' : '' }}"></div>
                                           <select
                                                 class="imput-dropdown-50-i1137311309-XdYlS2 poppins-normal-manatee-18px"
                                                 name="size" id="">
-                                                <option >Tam.</option>
+                                                <option value="">Tam.</option>
                                                 <option value="1">T1</option>
                                                 <option value="2">T2</option>
                                                 <option value="3">T3</option>
@@ -94,12 +96,12 @@
                               </div>
                               <div class="imput-dropdown-50-GYmRJl">
                                     <div class="imput-dropdown-50-fzRxBf">
-                                          <div class="imput-dropdown-50-UMSVgd border-2px-cloud"></div>
+                                          <div class="imput-dropdown-50-UMSVgd border-2px-cloud {{ $errors->has('art') ? ' border-error' : '' }}"></div>
 
                                           <select
                                                 class="imput-dropdown-50-i1137411309-UMSVgd poppins-normal-manatee-18px"
                                                 name="art" id="">
-                                                <option>Arte</option>
+                                                <option value="">Arte</option>
                                                 <option value="1">Rede</option>
                                                 <option value="2">Vara</option>
                                                 >
@@ -113,7 +115,7 @@
                         <div class="vai-receber-dXBp89">Vai receber</div>
                   </div>
                   <div class="flex-row-VMr6Om">
-                        <div class="imput-100-BdpSxK border-2px-cloud">
+                        <div class="imput-100-BdpSxK border-2px-cloud {{ $errors->has('price') ? ' border-error' : '' }}">
                               <input class="imput-100-i1391111253-YEGizG poppins-normal-manatee-18px" name="price"
                                     placeholder="€ 000,00" type="text" required />
                         </div>

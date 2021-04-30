@@ -15,7 +15,7 @@ class ProductController extends Controller
     public function stepOne(Request $request)
     {
         $product = $request->session()->get('product');
-        return view('seller.salle-step-1', compact('product', $product));
+        return view('seller.salle-step-1', compact('product'));
     }
 
     public function postCreateStepOne(Request $request)
@@ -35,7 +35,15 @@ class ProductController extends Controller
 
     public function postCreateStepTwo(Request $request)
     {
-        $validatedData = $request->validate([]);
+        $request->validate([
+            'especie' => 'required',
+            'qty' => 'required',
+            'unity' => 'required',
+            'size' => 'required',
+            'art' => 'required',
+            'price' => 'required',
+
+        ]);
 
         $product2 = $request->all();
         session()->put('product-2', $product2);
@@ -44,7 +52,7 @@ class ProductController extends Controller
         $session2 = $request->session()->get('product-2');
 
         // $product = $request->all();
-       
+
 
         $product = Product::create([
             'user_id' => $session['user_id'],
