@@ -52,7 +52,9 @@
                         <div class="flex-row-VyzZeT">
                               <div class="imput-dropdown-50-SxxATt">
                                     <div class="imput-dropdown-50-ypvSpm">
-                                          <div class="imput-dropdown-50-KTw77A border-2px-cloud {{ $errors->has('qty') ? ' border-error' : '' }}"></div>
+                                          <div
+                                                class="imput-dropdown-50-KTw77A border-2px-cloud {{ $errors->has('qty') ? ' border-error' : '' }}">
+                                          </div>
 
                                           <select
                                                 class="imput-dropdown-50-i1136111309-KTw77A poppins-normal-manatee-18px "
@@ -66,7 +68,9 @@
                               </div>
                               <div class="imput-dropdown-50-kY3o9z">
                                     <div class="imput-dropdown-50-YQaWJm">
-                                          <div class="imput-dropdown-50-v1nxW5 border-2px-cloud {{ $errors->has('unity') ? ' border-error' : '' }}"></div>
+                                          <div
+                                                class="imput-dropdown-50-v1nxW5 border-2px-cloud {{ $errors->has('unity') ? ' border-error' : '' }}">
+                                          </div>
 
                                           <select
                                                 class="imput-dropdown-50-i1136711309-v1nxW5 poppins-normal-manatee-18px"
@@ -82,7 +86,9 @@
                         <div class="flex-row-ri4jeA">
                               <div class="imput-dropdown-50-WyERLE">
                                     <div class="imput-dropdown-50-M21geM">
-                                          <div class="imput-dropdown-50-XdYlS2 border-2px-cloud {{ $errors->has('size') ? ' border-error' : '' }}"></div>
+                                          <div
+                                                class="imput-dropdown-50-XdYlS2 border-2px-cloud {{ $errors->has('size') ? ' border-error' : '' }}">
+                                          </div>
                                           <select
                                                 class="imput-dropdown-50-i1137311309-XdYlS2 poppins-normal-manatee-18px"
                                                 name="size" id="">
@@ -96,7 +102,9 @@
                               </div>
                               <div class="imput-dropdown-50-GYmRJl">
                                     <div class="imput-dropdown-50-fzRxBf">
-                                          <div class="imput-dropdown-50-UMSVgd border-2px-cloud {{ $errors->has('art') ? ' border-error' : '' }}"></div>
+                                          <div
+                                                class="imput-dropdown-50-UMSVgd border-2px-cloud {{ $errors->has('art') ? ' border-error' : '' }}">
+                                          </div>
 
                                           <select
                                                 class="imput-dropdown-50-i1137411309-UMSVgd poppins-normal-manatee-18px"
@@ -115,13 +123,14 @@
                         <div class="vai-receber-dXBp89">Vai receber</div>
                   </div>
                   <div class="flex-row-VMr6Om">
-                        <div class="imput-100-BdpSxK border-2px-cloud {{ $errors->has('price') ? ' border-error' : '' }}">
+                        <div
+                              class="imput-100-BdpSxK border-2px-cloud {{ $errors->has('price') ? ' border-error' : '' }}">
                               <input class="imput-100-i1391111253-YEGizG poppins-normal-manatee-18px" name="price"
-                                    placeholder="€ 000,00" type="text" required />
+                                    placeholder="€ 000,00" type="text" id="price" onkeyup="getPriceValue()" required />
                         </div>
                         <div class="overlap-group1-BdpSxK">
                               <div class="rectangle-5-q9xEPe"></div>
-                              <input class="x00000-q9xEPe" placeholder="€ 000,00" type="text" />
+                              <input class="x00000-q9xEPe" placeholder="€ 000,00" id="percent" type="text" />
                         </div>
                   </div>
                   <div class="btn-generic-C61RwL">
@@ -136,5 +145,14 @@
 </div>
 
 
-
+<script>
+      function getPriceValue()
+      {
+var input1 = $("#price").val();
+var valor = 0;
+         var value =  input1 - input1 * (40/100);
+         var input2 = $("#percent").val(value);
+      }
+      
+</script>
 @endsection
