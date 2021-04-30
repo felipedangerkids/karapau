@@ -21,9 +21,11 @@
                               <div class="imput-dropdown-100-xcwlBC border-2px-cloud"></div>
                               <select class="imput-dropdown-100-i1133111327-xcwlBC poppins-normal-manatee-18px"
                                     name="porto" id="">
-                                    <option value="1">Porto 1</option>
-                                    <option value="2">Porto 2</option>
-                                    <option value="3">Porto 3</option>
+                                    @foreach ($portos as $porto)
+                                        <option value="{{ $porto->id }}">{{ $porto->name }}</option>
+                                    @endforeach
+                                   
+                            
                               </select>
                         </div>
                   </div>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Porto;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
@@ -14,8 +15,9 @@ class ProductController extends Controller
      */
     public function stepOne(Request $request)
     {
+        $portos = Porto::all();
         $product = $request->session()->get('product');
-        return view('seller.salle-step-1', compact('product'));
+        return view('seller.salle-step-1', compact('product', 'portos'));
     }
 
     public function postCreateStepOne(Request $request)
