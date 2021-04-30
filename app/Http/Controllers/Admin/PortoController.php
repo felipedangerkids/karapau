@@ -84,6 +84,9 @@ class PortoController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $porto = Porto::findOrFail($id);
+        $porto->delete();
+
+        return redirect()->back()->with('success', 'Porto deletado com sucesso!');
     }
 }

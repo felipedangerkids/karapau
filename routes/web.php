@@ -58,3 +58,4 @@ Route::get('admin/cadastros', [AdminDashboardController::class, 'cadastros']);
 Route::get('admin/cadastros/portos', [AdminDashboardController::class, 'portos']);
 
 Route::post('admin/cadastros/portos/store', [PortoController::class, 'store']);
+Route::any('admin/cadastros/portos/delete/{id}', [PortoController::class, 'destroy']);

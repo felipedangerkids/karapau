@@ -49,7 +49,7 @@
                                           <td>{{ $porto->localization }}</td>
                                           <td><span class="tag tag-success">Ativo</span></td>
                                           <td>
-                                                <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i> Apagar</button>
+                                               <a href="{{ url('admin/cadastros/portos/delete/'. $porto->id) }}"> <button onclick="return confirm('Você tem certeza que gostaria de deletar este porto?');" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i> Apagar</button></a>
                                                 <button class="btn btn-primary btn-sm"><i class="fas fa-pencil-alt"></i> Editar</button>
                                           </td>
                                     </tr>
