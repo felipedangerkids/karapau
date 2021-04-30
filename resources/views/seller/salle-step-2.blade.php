@@ -76,9 +76,9 @@
                                                 class="imput-dropdown-50-i1136711309-v1nxW5 poppins-normal-manatee-18px"
                                                 name="unity" id="">
                                                 <option value="">Unid.</option>
-                                                <option value="1">10</option>
-                                                <option value="2">50</option>
-                                                <option value="3">100</option>
+                                                <option value="1">Kg</option>
+                                                <option value="2">Unidade</option>
+                                         
                                           </select>
                                     </div>
                               </div>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
 use App\Http\Controllers\Auth\BuyerController;
 use App\Http\Controllers\Auth\CollectiveBuyer;
 use App\Http\Controllers\Auth\CollectiveBuyerController;
@@ -23,7 +24,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('auth.login');
+    return view('auth.custom-login');
 });
 
 
@@ -46,3 +47,11 @@ Route::get('seller-step-two', [ProductController::class, 'stepTwo'])->middleware
 Route::post('seller-step-two-post', [ProductController::class, 'postCreateStepTwo']);
 
 Route::any('sessionforget', [ProductController::class, 'store']);
+
+
+
+/*  admin */ 
+
+Route::get('admin/cadastros', [AdminDashboardController::class, 'cadastros']);
+
+Route::get('admin/cadastros/portos', [AdminDashboardController::class, 'portos']);
