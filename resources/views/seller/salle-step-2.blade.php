@@ -130,7 +130,7 @@
                         </div>
                         <div class="overlap-group1-BdpSxK">
                               <div class="rectangle-5-q9xEPe"></div>
-                              <input class="x00000-q9xEPe" placeholder="€ 000,00" id="percent" type="text" />
+                              <input class="x00000-q9xEPe" disabled placeholder="€ 000,00" id="percent" type="text" />
                         </div>
                   </div>
                   <div class="btn-generic-C61RwL">
